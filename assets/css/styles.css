@@ -1,0 +1,102 @@
+
+
+/* Variables */
+:root {
+    --font-family: "Inter", sans-serif;
+    --normal-font: 400;
+    --bold-font: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    padding: 0px 50px;
+    top: 0px;
+    left: 0;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 1.5rem 3.5rem; */
+    transition: transform 0.2s;
+}
+
+.bottom h2, .bottom a {
+    color: black;
+    font-family: var(--font-family);
+    font-weight: var(--bold-font);
+    font-size: 3vw;
+}
+
+.bottom h2:hover, .bottom a:hover {
+    color: red;
+}
+
+nav h2, nav a {
+    color: black;
+    font-family: var(--font-family);
+    font-weight: var(--bold-font);
+    font-size: 3vw;
+}
+
+nav h2:hover, nav a:hover {
+    color: red;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1600px;
+    min-height: 100vh;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+main h1 {
+    font-family: var(--font-family);
+    font-weight: var(--bold-font);
+    font-size: 6.5vw;
+}
+
+main h2 {
+    font-family: var(--font-family);
+    font-weight: var(--normal-font);
+    font-size: 3.3vw;
+}
+
+.bottom {  
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+    padding: 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
