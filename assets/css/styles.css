@@ -18,19 +18,13 @@ html {
     box-sizing: border-box;
 }
 
-a {
+a, a:visited {
     text-decoration: none;
-}
-
-.bg {
-    /* position: relative; */
-    /* height: 100vh;
-    z-index: -100; */
-    display: flex;
-    justify-content: center;
+    color: white;
 }
 
 .top {
+    position: fixed;
     height: 10vh;
     width: 100%;
     line-height: 10vh;
@@ -38,13 +32,15 @@ a {
     font-family: var(--font-family);
     font-weight: var(--bold-font);
     transition: transform 0.5s;
+    background-color: black;
+
 }
 
 .top h2 {
     position: fixed;
 }
 
-.top a:hover {
+a:hover {
     color: red;
 }
 
@@ -64,24 +60,37 @@ a {
 }
 
 .bottom {  
-    position: fixed; 
+    position: fixed;
     bottom:0%;
-    height: 100px;
-    width:100%; 
-    padding: 50px 50px;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: transform 0.2s;
-    overflow: hidden;
+    height: 10vh;
+    line-height: 10vh;
+    width:100%;
+    font-size: 3vw;
+    transition: transform 0.5s;
+    background-color: black;
 }
 
-.content {
-    border: 1px solid black;
+.bottom h2 {
+    position: fixed;
+}
+
+.contact {
+    left: 0;
+    padding: 0 50px;
+}
+
+.resume {
+    right: 0;
+    padding: 0 50px;
+}
+
+.gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery img {
+    object-fit: contain;
 }
 
 .content div {
@@ -105,7 +114,7 @@ nav {
 }
 
 .bottom h2, .bottom a {
-    color: black;
+    color: white;
     font-family: var(--font-family);
     font-weight: var(--bold-font);
     font-size: 3vw;
@@ -115,24 +124,13 @@ nav {
     color: red;
 }
 
-nav h2, nav a {
-    color: black;
-    font-family: var(--font-family);
-    font-weight: var(--bold-font);
-    font-size: 3vw;
-}
-
-nav h2:hover, nav a:hover {
-    color: red;
-}
-
-main {
+/* main {
     margin: 0 auto;
     width: 100%;
     height: 100%;
     max-width: 1600px;
     overflow: hidden;
-}
+} */
 
 p {
     font-family: var(--font-family);
@@ -182,7 +180,7 @@ main h1, main h1 a {
 main h2 {
     font-family: var(--font-family);
     font-weight: var(--bold-font);
-    font-size: 3.3vw;
+    font-size: 3vw;
 }
 
 @media screen and (max-width: 480px) {
