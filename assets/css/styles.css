@@ -5,6 +5,8 @@
     --font-family: "Inter", sans-serif;
     --normal-font: 400;
     --bold-font: 600;
+    --almost-black: #2f2f2f;
+    --almost-white: #fdfdfd;
 }
 
 html {
@@ -18,9 +20,16 @@ html {
     box-sizing: border-box;
 }
 
+main {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--almost-white);
+    overflow: scroll;
+}
+
 a, a:visited {
     text-decoration: none;
-    color: white;
+    color: var(--almost-white);
 }
 
 .top {
@@ -32,7 +41,7 @@ a, a:visited {
     font-family: var(--font-family);
     font-weight: var(--bold-font);
     transition: transform 0.5s;
-    background-color: black;
+    background-color: var(--almost-black);
 
 }
 
@@ -67,7 +76,7 @@ a:hover {
     width:100%;
     font-size: 3vw;
     transition: transform 0.5s;
-    background-color: black;
+    background-color: var(--almost-black);
 }
 
 .bottom h2 {
@@ -114,7 +123,7 @@ nav {
 }
 
 .bottom h2, .bottom a {
-    color: white;
+    color: var(--almost-white);
     font-family: var(--font-family);
     font-weight: var(--bold-font);
     font-size: 3vw;
@@ -174,17 +183,18 @@ main h1, main h1 a {
     font-family: var(--font-family);
     font-weight: var(--bold-font);
     font-size: 6.5vw;
-    color: black;
+    color: var(--almost-black);
 }
 
 main h2 {
     font-family: var(--font-family);
     font-weight: var(--bold-font);
     font-size: 3vw;
+    color: var(--almost-black);
 }
 
 @media screen and (max-width: 480px) {
-    nav h2, nav a, .bottom h2, .bottom a, .selected {
+    .top h2, .top a, .bottom h2, .bottom a, .selected {
         font-size: 20px;
     }
 }
